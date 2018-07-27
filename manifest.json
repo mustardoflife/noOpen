@@ -1,0 +1,21 @@
+{
+    "name": "noOpen",
+    "version": "1.0",
+    "description": "Prohibit opening a web site",
+    "browser_action": {
+        "default_icon": "Pullblack.png",
+        "default_title": "noOpen知乎",
+        "default_popup": "DETAIL.html"
+    },
+    "permissions": [
+        "tabs",
+        "http://*/*",
+        "https://*/*",
+        "notifications"
+    ],
+    "manifest_version": 2,
+    "content_scripts": [{
+        "matches": ["https://www.zhihu.com/"],
+        "js": ["myscript.js"]
+    }]
+}
