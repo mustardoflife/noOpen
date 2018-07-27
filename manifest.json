@@ -15,7 +15,7 @@
     ],
     "manifest_version": 2,
     "content_scripts": [{
-        "matches": ["https://www.zhihu.com/"],
+        "matches": ["https://www.xxx.com/"],
         "js": ["myscript.js"]
     }]
 }
